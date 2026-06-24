@@ -62,7 +62,7 @@
         margin-bottom: 40px;
 
         a {
-            background: url('img/mozilla-wordmark-white.svg') no-repeat;
+            background: url('img/lockup-white.svg') no-repeat;
             @include background-size(100px, 32px);
             @include image-replaced;
             display: inline-block;

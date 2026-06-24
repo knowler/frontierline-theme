@@ -18,12 +18,16 @@ Domain Path: /languages/
 *
 * Don't edit style.css directly!
 **********/
-@font-face { font-display: swap; font-family: 'Zilla Slab'; font-style: normal; font-weight: normal; src: url("fonts/ZillaSlab-Regular.woff2") format("woff2"), url("fonts/ZillaSlab-Regular.woff") format("woff"); }
-@font-face { font-display: swap; font-family: 'Zilla Slab'; font-style: normal; font-weight: bold; src: url("fonts/ZillaSlab-Bold.woff2") format("woff2"), url("fonts/ZillaSlab-Bold.woff") format("woff"); }
-@font-face { font-display: swap; font-family: Inter; font-style: normal; font-weight: normal; src: url("fonts/Inter-Regular.woff2") format("woff2"), url("fonts/Inter-Regular.woff") format("woff"); }
-@font-face { font-display: swap; font-family: Inter; font-style: normal; font-weight: bold; src: url("fonts/Inter-Bold.woff2") format("woff2"), url("fonts/Inter-Bold.woff") format("woff"); }
-@font-face { font-display: swap; font-family: Inter; font-style: italic; font-weight: normal; src: url("fonts/Inter-Italic.woff2") format("woff2"), url("fonts/Inter-Italic.woff") format("woff"); }
-@font-face { font-display: swap; font-family: Inter; font-style: italic; font-weight: bold; src: url("fonts/Inter-BoldItalic.woff2") format("woff2"), url("fonts/Inter-BoldItalic.woff") format("woff"); }
+@font-face { font-display: swap; font-family: 'Mozilla Headline'; font-style: normal; font-weight: normal; src: url("fonts/mozilla-headline/MozillaHeadline-Regular.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Headline'; font-style: normal; font-weight: 600; src: url("fonts/mozilla-headline/MozillaHeadline-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: headline-fallback; src: local("Helvetica Neue"); ascent-override: 84%; descent-override: 36%; line-gap-override: 0%; size-adjust: 98%; }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: normal; font-weight: normal; src: url("fonts/mozilla-text/MozillaText-Regular.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: normal; font-weight: 600; src: url("fonts/mozilla-text/MozillaText-SemiBold.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: italic; font-weight: 600; src: url("fonts/mozilla-text/MozillaText-SemiBoldItalic.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: normal; font-weight: bold; src: url("fonts/mozilla-text/MozillaText-Bold.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: italic; font-weight: normal; src: url("fonts/mozilla-text/MozillaText-Italic.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: italic; font-weight: bold; src: url("fonts/mozilla-text/MozillaText-BoldItalic.woff2") format("woff2"); }
+@font-face { font-family: text-fallback; src: local("Helvetica Neue"); ascent-override: 84%; descent-override: 36%; line-gap-override: 0%; size-adjust: 98%; }
 @-webkit-keyframes pebbles-bounce-down { 0%, 60%, 75%, 90%, 100% { -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% { opacity: 0; -webkit-transform: translate3d(0, -500px, 0); transform: translate3d(0, -500px, 0); }
   60% { opacity: 1; -webkit-transform: translate3d(0, 25px, 0); transform: translate3d(0, 25px, 0); }
@@ -64,7 +68,7 @@ img, video, object, embed { -ms-interpolation-mode: bicubic; height: auto; max-w
 
 html { font-size: 100%; background: #fff; }
 
-body { font-size: 18px; font-size: 1rem; background: #fff; color: #000; font-family: Inter, X-LocaleSpecific, sans-serif; line-height: 1.5; }
+body { font-size: 18px; font-size: 1rem; background: #fff; color: #000; font-family: "Mozilla Text", "Helvetica Neue", Arial, X-LocaleSpecific, sans-serif; line-height: 1.5; }
 
 #strings { display: none; }
 
@@ -78,7 +82,7 @@ body { font-size: 18px; font-size: 1rem; background: #fff; color: #000; font-fam
 @media screen and (min-width: 1000px) { .content { width: 980px; } }
 @media screen and (min-width: 1400px) { .content { width: 1380px; } }
 
-h1, h2, h3, h4, h5, h6, legend { font-family: "Zilla Slab", Inter, X-LocaleSpecific, sans-serif; font-weight: bold; line-height: 1.1; margin: 0 0 .25em; }
+h1, h2, h3, h4, h5, h6, legend { font-family: 'Mozilla Headline', 'Helvetica Neue', Arial, X-LocaleSpecific, sans-serif; font-weight: bold; line-height: 1.1; margin: 0 0 .25em; }
 
 h1 { font-size: 36px; font-size: 2rem; }
 @media screen and (min-width: 760px) { h1 { font-size: 48px; font-size: 2.6666666667rem; } }
@@ -164,7 +168,7 @@ ol.prose ul { list-style: disc; margin-left: 20px; margin-bottom: 0; }
 
 [dir='rtl'] .data-table caption, [dir='rtl'] .data-table th, [dir='rtl'] .data-table td { text-align: right; }
 
-button, input, select, textarea { font-family: Inter, X-LocaleSpecific, sans-serif; }
+button, input, select, textarea { font-family: "Mozilla Text", "Helvetica Neue", Arial, X-LocaleSpecific, sans-serif; }
 
 textarea { height: auto; max-width: 100%; }
 
@@ -392,7 +396,7 @@ textarea:-moz-ui-invalid:not(output), input[type=email]:-moz-ui-invalid:not(outp
 #site-info nav:after { clear: both; content: ''; display: block; height: 0; visibility: hidden; }
 #site-info section { margin-bottom: 40px; }
 #site-info .logo { margin-bottom: 40px; }
-#site-info .logo a { background: url("img/mozilla-wordmark-white.svg") no-repeat; -webkit-background-size: 100px, 32px; background-size: 100px, 32px; overflow: hidden; text-indent: 120%; white-space: nowrap; display: inline-block; height: 32px; width: 100px; }
+#site-info .logo a { background: url("img/lockup-white.svg") no-repeat; -webkit-background-size: 100px, 32px; background-size: 100px, 32px; overflow: hidden; text-indent: 120%; white-space: nowrap; display: inline-block; height: 32px; width: 100px; }
 #site-info .social-links { margin: 2em 0 0; }
 #site-info .social-links li { display: inline-block; margin-right: 20px; }
 #site-info .social-links li a { display: block; overflow: hidden; text-indent: 120%; white-space: nowrap; background-image: url("img/social-icon-sprite.svg"); }
@@ -516,7 +520,7 @@ textarea:-moz-ui-invalid:not(output), input[type=email]:-moz-ui-invalid:not(outp
 .nav-global .content { padding: 0 20px; }
 .nav-global .logo { font-size: 12px; font-size: 0.6666666667rem; -webkit-transition: width 250ms ease-in-out, height 250ms ease-in-out; transition: width 250ms ease-in-out, height 250ms ease-in-out; float: right; height: 20px; line-height: 1; width: 63px; }
 @media screen and (min-width: 760px) { .nav-global .logo { font-size: 14px; font-size: 0.7777777778rem; } }
-.nav-global .logo a { -webkit-background-size: cover; background-size: cover; overflow: hidden; text-indent: 120%; white-space: nowrap; -webkit-transition: background-size 250ms ease-in-out, -webkit-background-size 250ms ease-in-out; transition: background-size 250ms ease-in-out, -webkit-background-size 250ms ease-in-out; background-image: url("img/mozilla-wordmark-black.svg"); background-repeat: no-repeat; display: block; height: 100%; width: 100%; }
+.nav-global .logo a { -webkit-background-size: cover; background-size: cover; overflow: hidden; text-indent: 120%; white-space: nowrap; -webkit-transition: background-size 250ms ease-in-out, -webkit-background-size 250ms ease-in-out; transition: background-size 250ms ease-in-out, -webkit-background-size 250ms ease-in-out; background-image: url("img/lockup-black.svg"); background-repeat: no-repeat; display: block; height: 100%; width: 100%; }
 @media screen and (min-width: 1000px) { .nav-global .logo { float: left; } }
 .nav-global .nav-global-fxdownload { left: 50px; margin: 0; position: absolute; top: .25em; width: 190px; }
 .nav-global .nav-global-fxdownload .button { font-size: 14px; font-size: 0.7777777778rem; -webkit-transition: font-size 250ms ease-in-out, padding 250ms ease-in-out, background-color 100ms, border-color 100ms, color 100ms; transition: font-size 250ms ease-in-out, padding 250ms ease-in-out, background-color 100ms, border-color 100ms, color 100ms; margin: 0 auto; padding: 0 15px; }
@@ -546,9 +550,9 @@ textarea:-moz-ui-invalid:not(output), input[type=email]:-moz-ui-invalid:not(outp
 .js .nav-mozilla-menu { left: auto; display: none; }
 
 @media screen and (min-width: 1000px) { .nav-global { height: 2.5em; padding: 1em 0; }
-  .nav-global .logo { height: 40px; width: 126px; }
+  .nav-global .logo { height: 40px; width: 167px; }
   .nav-global.is-minified { height: 1.2em; padding: .5em 0; }
-  .nav-global.is-minified .logo { height: 20px; width: 63px; }
+  .nav-global.is-minified .logo { height: 20px; width: 83px; }
   .nav-global.is-minified .nav-mozilla-menu { font-size: 12px; font-size: 0.6666666667rem; padding: .25em 0; } }
 @media screen and (min-width: 1000px) and (min-width: 760px) { .nav-global.is-minified .nav-mozilla-menu { font-size: 14px; font-size: 0.7777777778rem; } }
 @media screen and (min-width: 1000px) { .nav-global.is-minified .nav-mozilla-menu .button { font-size: 12px; font-size: 0.6666666667rem; margin-top: -.35em; } }

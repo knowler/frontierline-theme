@@ -1,0 +1,62 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Mozilla Text';
+    font-style: normal;
+    font-weight: normal;
+    src:
+        url('fonts/mozilla-text/MozillaText-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Mozilla Text';
+    font-style: normal;
+    font-weight: 600;
+    src:
+        url('fonts/mozilla-text/MozillaText-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Mozilla Text';
+    font-style: italic;
+    font-weight: 600;
+    src:
+        url('fonts/mozilla-text/MozillaText-SemiBoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Mozilla Text';
+    font-style: normal;
+    font-weight: bold;
+    src:
+        url('fonts/mozilla-text/MozillaText-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Mozilla Text';
+    font-style: italic;
+    font-weight: normal;
+    src:
+        url('fonts/mozilla-text/MozillaText-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Mozilla Text';
+    font-style: italic;
+    font-weight: bold;
+    src:
+        url('fonts/mozilla-text/MozillaText-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: text-fallback;
+    src: local("Helvetica Neue");
+    ascent-override: 84%;
+    descent-override: 36%;
+    line-gap-override: 0%;
+    size-adjust: 98%;
+  }

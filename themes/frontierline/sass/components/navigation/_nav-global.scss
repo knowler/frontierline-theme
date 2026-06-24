@@ -32,7 +32,7 @@
             @include background-size(cover);
             @include image-replaced;
             @include transition(background-size 250ms ease-in-out, -webkit-background-size 250ms ease-in-out);
-            background-image: url('img/mozilla-wordmark-black.svg');
+            background-image: url('img/lockup-black.svg');
             background-repeat: no-repeat;
             display: block;
             height: 100%;
@@ -195,7 +195,7 @@
 
         .logo {
             height: 40px;
-            width: 126px;
+            width: 167px;
         }
 
         &.is-minified {
@@ -204,7 +204,7 @@
 
             .logo {
                 height: 20px;
-                width: 63px;
+                width: 83px;
             }
 
             .nav-mozilla-menu {

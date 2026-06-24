@@ -6,9 +6,9 @@
 // The custom X-LocaleSpecific font family is defined with a @font-face rule in
 // locale-specific stylesheets which can be found at /media/css/l10n/. See
 // /docs/l10n.rst for details.
-$font-base: Inter, X-LocaleSpecific, sans-serif;
+$font-base: 'Mozilla Text', 'Helvetica Neue', Arial, X-LocaleSpecific, sans-serif;
 $font-firefox: Metropolis, Inter, X-LocaleSpecific, sans-serif;
-$font-mozilla: 'Zilla Slab', Inter, X-LocaleSpecific, sans-serif;
+$font-mozilla: 'Mozilla Text', 'Helvetica Neue', Arial, X-LocaleSpecific, sans-serif;
 
 $base-font-stack: $font-base;
 $base-font-size: 100%;
