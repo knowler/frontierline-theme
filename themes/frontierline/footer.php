@@ -28,7 +28,6 @@
           <li><a href="https://donate.mozilla.org/?presets=50,30,20,10&amp;amount=30&amp;currency=usd&amp;utm_source=<?php echo frontierline_blog_domain(); ?>&amp;utm_campaign=footer&amp;utm_medium=referral" class="donate" data-link-type="footer" data-link-name="Donate"><?php _e('Donate', 'frontierline'); ?></a></li>
           <li>
             <ul class="social-links">
-              <li><a class="twitter" href="https://twitter.com/mozilla" data-link-type="footer" data-link-name="Twitter (@mozilla)">Twitter<span> (@mozilla)</span></a></li>
               <li><a class="instagram" href="https://www.instagram.com/mozillagram/" data-link-type="footer" data-link-name="Instagram (@mozillagram)">Instagram<span> (@mozillagram)</span></a></li>
             </ul>
           </li>
@@ -44,7 +43,6 @@
           <li><a href="https://www.mozilla.org/firefox/channel/desktop/?utm_source=<?php echo frontierline_blog_domain(); ?>&amp;utm_campaign=footer&amp;utm_medium=referral" data-link-type="footer" data-link-name="Beta, Nightly, Developer Edition"><?php _e('Beta, Nightly, Developer Edition', 'frontierline'); ?></a></li>
           <li>
             <ul class="social-links">
-              <li><a class="twitter" href="https://twitter.com/firefox" data-link-type="footer" data-link-name="Twitter (@firefox)">Twitter<span> (@firefox)</span></a></li>
               <li><a class="youtube" href="https://www.youtube.com/firefoxchannel" data-link-type="footer" data-link-name="YouTube (firefoxchannel)">YouTube<span> (firefoxchannel)</span></a></li>
             </ul>
           </li>
