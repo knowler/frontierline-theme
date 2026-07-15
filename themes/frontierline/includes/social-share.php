@@ -12,6 +12,7 @@ $share_via = sanitize_text_field(get_option('frontierline_twitter_username'));
 ?>
 
 <div class="social-share">
+	<?php /* Remove Twitter sharing too...
   <b><?php _e('Share:', 'frontierline'); ?></b>
   <ul>
     <li><a rel="external nofollow noopener" target="_blank" class="twitter" data-network="Twitter" data-blog="<?php echo $blog_name; ?>" href="https://twitter.com/intent/tweet/?text=<?php echo $share_text; ?>&amp;url=<?php echo $share_url; ?><?php if (get_option('frontierline_twitter_username')) : ?>&amp;via=<?php echo $share_via; endif ?>&amp;utm_source=twitter&amp;utm_medium=social&amp;utm_campaign=shares_from_blog">Twitter</a></li>
