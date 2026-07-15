@@ -1,11 +1,15 @@
 /* !important used for forceful overrides */
 /* stylelint-disable declaration-no-important  */
-@font-face { font-display: swap; font-family: 'Zilla Slab'; font-style: normal; font-weight: normal; src: url("fonts/ZillaSlab-Regular.woff2") format("woff2"), url("fonts/ZillaSlab-Regular.woff") format("woff"); }
-@font-face { font-display: swap; font-family: 'Zilla Slab'; font-style: normal; font-weight: bold; src: url("fonts/ZillaSlab-Bold.woff2") format("woff2"), url("fonts/ZillaSlab-Bold.woff") format("woff"); }
-@font-face { font-display: swap; font-family: Inter; font-style: normal; font-weight: normal; src: url("fonts/Inter-Regular.woff2") format("woff2"), url("fonts/Inter-Regular.woff") format("woff"); }
-@font-face { font-display: swap; font-family: Inter; font-style: normal; font-weight: bold; src: url("fonts/Inter-Bold.woff2") format("woff2"), url("fonts/Inter-Bold.woff") format("woff"); }
-@font-face { font-display: swap; font-family: Inter; font-style: italic; font-weight: normal; src: url("fonts/Inter-Italic.woff2") format("woff2"), url("fonts/Inter-Italic.woff") format("woff"); }
-@font-face { font-display: swap; font-family: Inter; font-style: italic; font-weight: bold; src: url("fonts/Inter-BoldItalic.woff2") format("woff2"), url("fonts/Inter-BoldItalic.woff") format("woff"); }
+@font-face { font-display: swap; font-family: 'Mozilla Headline'; font-style: normal; font-weight: normal; src: url("fonts/mozilla-headline/MozillaHeadline-Regular.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Headline'; font-style: normal; font-weight: 600; src: url("fonts/mozilla-headline/MozillaHeadline-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: headline-fallback; src: local("Helvetica Neue"); ascent-override: 84%; descent-override: 36%; line-gap-override: 0%; size-adjust: 98%; }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: normal; font-weight: normal; src: url("fonts/mozilla-text/MozillaText-Regular.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: normal; font-weight: 600; src: url("fonts/mozilla-text/MozillaText-SemiBold.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: italic; font-weight: 600; src: url("fonts/mozilla-text/MozillaText-SemiBoldItalic.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: normal; font-weight: bold; src: url("fonts/mozilla-text/MozillaText-Bold.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: italic; font-weight: normal; src: url("fonts/mozilla-text/MozillaText-Italic.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: 'Mozilla Text'; font-style: italic; font-weight: bold; src: url("fonts/mozilla-text/MozillaText-BoldItalic.woff2") format("woff2"); }
+@font-face { font-family: text-fallback; src: local("Helvetica Neue"); ascent-override: 84%; descent-override: 36%; line-gap-override: 0%; size-adjust: 98%; }
 @-webkit-keyframes pebbles-bounce-down { 0%, 60%, 75%, 90%, 100% { -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   0% { opacity: 0; -webkit-transform: translate3d(0, -500px, 0); transform: translate3d(0, -500px, 0); }
   60% { opacity: 1; -webkit-transform: translate3d(0, 25px, 0); transform: translate3d(0, 25px, 0); }
@@ -46,7 +50,7 @@ img, video, object, embed { -ms-interpolation-mode: bicubic; height: auto; max-w
 
 html { font-size: 100%; background: #fff; }
 
-body { font-size: 18px; font-size: 1rem; background: #fff; color: #000; font-family: Inter, X-LocaleSpecific, sans-serif; line-height: 1.5; }
+body { font-size: 18px; font-size: 1rem; background: #fff; color: #000; font-family: "Mozilla Text", "Helvetica Neue", Arial, X-LocaleSpecific, sans-serif; line-height: 1.5; }
 
 #strings { display: none; }
 
@@ -60,7 +64,7 @@ body { font-size: 18px; font-size: 1rem; background: #fff; color: #000; font-fam
 @media screen and (min-width: 1000px) { .content { width: 980px; } }
 @media screen and (min-width: 1400px) { .content { width: 1380px; } }
 
-h1, h2, h3, h4, h5, h6, legend { font-family: "Zilla Slab", Inter, X-LocaleSpecific, sans-serif; font-weight: bold; line-height: 1.1; margin: 0 0 .25em; }
+h1, h2, h3, h4, h5, h6, legend { font-family: 'Mozilla Headline', 'Helvetica Neue', Arial, X-LocaleSpecific, sans-serif; font-weight: bold; line-height: 1.1; margin: 0 0 .25em; }
 
 h1 { font-size: 36px; font-size: 2rem; }
 @media screen and (min-width: 760px) { h1 { font-size: 48px; font-size: 2.6666666667rem; } }
@@ -146,7 +150,7 @@ ol.prose ul { list-style: disc; margin-left: 20px; margin-bottom: 0; }
 
 [dir='rtl'] .data-table caption, [dir='rtl'] .data-table th, [dir='rtl'] .data-table td { text-align: right; }
 
-button, input, select, textarea { font-family: Inter, X-LocaleSpecific, sans-serif; }
+button, input, select, textarea { font-family: "Mozilla Text", "Helvetica Neue", Arial, X-LocaleSpecific, sans-serif; }
 
 textarea { height: auto; max-width: 100%; }
 
@@ -160,7 +164,7 @@ textarea:-moz-ui-invalid:not(output), input[type=email]:-moz-ui-invalid:not(outp
 
 html { font-size: 112.5%; }
 
-body.wp-autoresize.mceContentBody { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 18px; font-size: 1rem; background: #fff; color: #000; font-family: Inter, X-LocaleSpecific, sans-serif; line-height: 1.5; margin: 0 auto; max-width: 940px; padding: 20px !important; }
+body.wp-autoresize.mceContentBody { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 18px; font-size: 1rem; background: #fff; color: #000; font-family: "Mozilla Text", "Helvetica Neue", Arial, X-LocaleSpecific, sans-serif; line-height: 1.5; margin: 0 auto; max-width: 940px; padding: 20px !important; }
 @media screen and (min-width: 480px) { body.wp-autoresize.mceContentBody { padding: 30px 20px !important; } }
 @media screen and (min-width: 760px) { body.wp-autoresize.mceContentBody { padding: 30px 60px !important; } }
 body.wp-autoresize.mceContentBody h1, body.wp-autoresize.mceContentBody h2, body.wp-autoresize.mceContentBody h3, body.wp-autoresize.mceContentBody h4, body.wp-autoresize.mceContentBody h5, body.wp-autoresize.mceContentBody h6, body.wp-autoresize.mceContentBody hr, body.wp-autoresize.mceContentBody p, body.wp-autoresize.mceContentBody pre, body.wp-autoresize.mceContentBody blockquote, body.wp-autoresize.mceContentBody figure, body.wp-autoresize.mceContentBody figcaption, body.wp-autoresize.mceContentBody table, body.wp-autoresize.mceContentBody ul, body.wp-autoresize.mceContentBody ol, body.wp-autoresize.mceContentBody li, body.wp-autoresize.mceContentBody dl, body.wp-autoresize.mceContentBody dt, body.wp-autoresize.mceContentBody dd { margin: 0; padding: 0; }
